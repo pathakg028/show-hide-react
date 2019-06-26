@@ -22,7 +22,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <button  onClick={e => {
+        <button className="App" onClick={e => {
               this.showModal();
          }}
           > show Modal </button>

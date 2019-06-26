@@ -1,4 +1,6 @@
 import React from "react";
+import "./modal.css";
+
 
 
 class Modal extends React.Component {
@@ -12,7 +14,7 @@ class Modal extends React.Component {
       <div>
         <div>{this.props.children}</div>
         <div>
-          <button onClick={this.onClose}>
+          <button class="toggle-button" onClick={this.onClose}>
             Close
           </button>
         </div>
