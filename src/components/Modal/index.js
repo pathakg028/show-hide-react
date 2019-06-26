@@ -2,7 +2,6 @@ import React from "react";
 
 
 class Modal extends React.Component {
-//console.log(this.props);
   onClose = e => { this.props.onClose && this.props.onClose(e)};
 
   render() {
@@ -13,7 +12,7 @@ class Modal extends React.Component {
       <div>
         <div>{this.props.children}</div>
         <div>
-          <button onClose = { e => { this.onClose(e)}}>
+          <button onClick={this.onClose}>
             Close
           </button>
         </div>

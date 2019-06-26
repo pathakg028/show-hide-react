@@ -1,5 +1,5 @@
 import React from "react";
-import Modal from "./components/Modal/index";
+import Modal from "./components/Modal";
 import "./styles.css";
 
 class App extends React.Component {
@@ -8,7 +8,9 @@ class App extends React.Component {
   };
 
   onClose = e => {
-    this.props.show = false;
+    this.setState({
+      show: !this.state.show
+    });
   };
 
 
